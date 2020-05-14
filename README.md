@@ -96,3 +96,10 @@ at the center. This can be explained by the fact that all hand images in FreiHAN
 3. We also found that the the model work best when the hand is at the certain depth position relative to the camera. If the hand is too close
 or too far from the camera the model will failed to estimate the hand pose. The can also be explained by the FreiHAND dataset, where all the 
 images contain similar hand size.
+
+
+### Citation
+[1] Ge, Liuhao, et al. “3d hand shape and pose estimation from a single rgb image.” Proceedings of the IEEE
+conference on computer vision and pattern recognition. 2019.
+
+
