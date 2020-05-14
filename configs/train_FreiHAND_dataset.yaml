@@ -1,0 +1,14 @@
+MODEL:
+  DEVICE: "cuda:0"
+  NUM_WORKERS: 0
+  BATCH_SIZE: 8
+  NUM_JOINTS: 21
+  PRETRAIN_WEIGHT:
+    HM_NET_PATH: "./model/FreiHAND_separate_trained_models/net_hm.pth"
+    MLP_NET_PATH: "./model/FreiHAND_separate_trained_models/mlp.pth"
+GRAPH:
+  TEMPLATE_PATH: "./data/0214_lowP_vn_g.0001.obj"
+TRAIN:
+  DATASET: "FreiHAND_train"
+  BACKGROUND_SET: 1
+  DATA_SIZE: 100

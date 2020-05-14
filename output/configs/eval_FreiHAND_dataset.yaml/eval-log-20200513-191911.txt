@@ -1,0 +1,51 @@
+2020-05-13 19:19:11,992 hand_shape_pose_inference INFO: EVAL:
+  DATASET: FreiHAND_test
+  PRINT_FREQ: 1
+  SAVE_BATCH_IMAGES_PRED: True
+  SAVE_DIR: ./output
+  SAVE_POSE_ESTIMATION: True
+GRAPH:
+  TEMPLATE_PATH: ./data/0214_lowP_vn_g.0001.obj
+MODEL:
+  BATCH_SIZE: 8
+  DEVICE: cpu
+  HOURGLASS:
+    NUM_FEAT_CHANNELS: 256
+    NUM_MODULES: 2
+    NUM_STAGES: 2
+  NUM_JOINTS: 21
+  NUM_WORKERS: 0
+  PRETRAIN_WEIGHT:
+    HM_NET_PATH: ./model/FreiHAND_BoneLoss_models/net_hm.pth
+    MESH_NET_PATH: ./model/pretrained_models/net_feat_mesh.pth
+    MLP_NET_PATH: ./model/FreiHAND_BoneLoss_models/mlp.pth
+    POSE_NET_PATH: ./model/pretrained_models/net_mesh_pose.pth
+TRAIN:
+  BACKGROUND_SET: 0
+  DATASET: 
+  DATA_SIZE: 32960
+2020-05-13 19:19:12,324 hand_shape_pose_inference INFO: Evaluate on 200 frames:
+2020-05-13 19:19:16,679 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_0.jpg
+2020-05-13 19:19:22,041 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_1.jpg
+2020-05-13 19:19:27,478 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_2.jpg
+2020-05-13 19:19:32,832 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_3.jpg
+2020-05-13 19:19:38,223 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_4.jpg
+2020-05-13 19:19:43,713 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_5.jpg
+2020-05-13 19:19:49,056 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_6.jpg
+2020-05-13 19:19:54,406 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_7.jpg
+2020-05-13 19:19:59,868 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_8.jpg
+2020-05-13 19:20:05,301 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_9.jpg
+2020-05-13 19:20:10,700 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_10.jpg
+2020-05-13 19:20:16,122 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_11.jpg
+2020-05-13 19:20:21,474 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_12.jpg
+2020-05-13 19:20:26,931 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_13.jpg
+2020-05-13 19:20:32,296 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_14.jpg
+2020-05-13 19:20:37,667 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_15.jpg
+2020-05-13 19:20:43,130 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_16.jpg
+2020-05-13 19:20:48,591 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_17.jpg
+2020-05-13 19:20:53,976 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_18.jpg
+2020-05-13 19:20:59,434 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_19.jpg
+2020-05-13 19:21:05,018 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_20.jpg
+2020-05-13 19:21:10,430 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_21.jpg
+2020-05-13 19:21:15,915 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_22.jpg
+2020-05-13 19:21:21,333 hand_shape_pose_inference INFO: Saving image: ./output\configs/eval_FreiHAND_dataset.yaml\pred_23.jpg
