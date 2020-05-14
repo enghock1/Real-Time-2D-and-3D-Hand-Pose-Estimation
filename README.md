@@ -1,4 +1,4 @@
-## Real-Time 2D and 3D Hand Pose Estimation from a Single RGB Image
+## Real-Time 2D and 3D Hand Pose Estimation from RGB Image
 
 <p align="center">
   <img src=pose_estimation_gif.gif/>
