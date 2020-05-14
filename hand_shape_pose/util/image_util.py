@@ -113,8 +113,9 @@ def uvd2xyz_freihand_test(uvd, root_uv, cam_param, pose_scale):
     a = (x9 - x10)**2 + (y9 - y10)**2
     b = d9*(x9**2 + y9**2 - x9*x10 - y9*y10) + d10*(x10**2 + y10**2 - x9*x10 - y9*y10)
     c = (x9*d9 - x10*d10)**2 + (y9*d9 - y10*d10)**2 + (d9 - d10)**2 - 1
-
-    sqrt_term = torch.tensor([cmath.sqrt(b[i]**2 - 4*a[i]*c[i]).imag for i in range(a.shape[0])])
+    
+    device = c.device
+    sqrt_term = torch.tensor([cmath.sqrt(b[i]**2 - 4*a[i]*c[i]).imag for i in range(a.shape[0])]).to(device)
     
     d_root = (0.5*(- b + sqrt_term)/a).unsqueeze(1) # B x 1 (scale-normalized depth of root joint)
     

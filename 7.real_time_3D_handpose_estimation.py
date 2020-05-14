@@ -68,7 +68,7 @@ while(True):
     frame_device = torch.from_numpy(frame).to(device)
     
     # feed forward the model to obtain 2D and 3D hand pose
-    est_pose_uv, est_pose_cam_xyz = model(frame_device, K, pose_scale)
+    _, est_pose_uv, est_pose_cam_xyz = model(frame_device, K, pose_scale)
     est_pose_uv = est_pose_uv.to('cpu')
     est_pose_cam_xyz = est_pose_cam_xyz.to('cpu')
     
